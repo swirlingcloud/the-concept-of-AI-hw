@@ -33,9 +33,6 @@ for k in range(1,9):
             w=[]
             datalist.append(w)
 
-        tree = KDTree(centroids, leaf_size=200)
-        dist,ind=tree.query(dataSet, k=1)
-
         for i in range(1000):
             clusterchange=False
             sumdis=[]
